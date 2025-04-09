@@ -1,0 +1,96 @@
+.task-form {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 16px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .half {
+    flex: 1;
+  }
+  
+  .task-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .task-form input,
+  .task-form select,
+  .task-form textarea,
+  .date-picker {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+  }
+  
+  .task-form input:focus,
+  .task-form select:focus,
+  .task-form textarea:focus,
+  .date-picker:focus {
+    border-color: #4a90e2;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  
+  .btn-cancel {
+    padding: 10px 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f5f5f5;
+    color: #555;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-submit {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4a90e2;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-cancel:hover {
+    background-color: #eee;
+  }
+  
+  .btn-submit:hover {
+    background-color: #3a80d2;
+  }
+  
+  /* React DatePicker custom styling */
+  .react-datepicker-wrapper {
+    width: 100%;
+  }
+  
+  .react-datepicker__input-container {
+    width: 100%;
+  }

@@ -1,0 +1,85 @@
+.list-form {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  }
+  
+  .list-form.task-form {
+    box-shadow: none;
+    padding: 0;
+  }
+  
+  .list-form .form-group {
+    margin-bottom: 8px;
+  }
+  
+  .list-form input,
+  .list-form textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: border 0.2s;
+  }
+  
+  .list-form input:focus,
+  .list-form textarea:focus {
+    border-color: #2196F3;
+    outline: none;
+    box-shadow: 0 0 0 1px rgba(33, 150, 243, 0.2);
+  }
+  
+  .form-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .submit-button {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .submit-button:hover {
+    background-color: #0b7dda;
+  }
+  
+  .cancel-button {
+    background: none;
+    border: none;
+    color: #6b778c;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 8px;
+    padding: 4px 8px;
+    transition: color 0.2s;
+  }
+  
+  .cancel-button:hover {
+    color: #172b4d;
+  }
+  
+  .add-item-button {
+    background: none;
+    border: none;
+    color: #6b778c;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: left;
+    padding: 8px 4px;
+    width: 100%;
+    transition: color 0.2s, background-color 0.2s;
+    border-radius: 3px;
+  }
+  
+  .add-item-button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #172b4d;
+  }

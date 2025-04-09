@@ -1,0 +1,233 @@
+
+.board-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .board-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: white;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .board-title-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .board-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  .board-members {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .board-member {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .board-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .board-action-btn {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .board-action-btn:hover {
+    background-color: #f1f3f5;
+  }
+  
+  .board-content {
+    flex-grow: 1;
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    background-color: #f5f7fa;
+  }
+  
+  .board-columns {
+    display: flex;
+    gap: 20px;
+    height: 100%;
+    min-width: fit-content;
+  }
+  
+  .board-column {
+    width: 280px;
+    background-color: #ebf0f5;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+  }
+  
+  .column-header {
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  
+  .column-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  .column-task-count {
+    background-color: rgba(44, 62, 80, 0.1);
+    color: #2c3e50;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 10px;
+  }
+  
+  .column-tasks {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .task-card {
+    background-color: white;
+    border-radius: 6px;
+    padding: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  
+  .task-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #2c3e50;
+    margin-bottom: 8px;
+  }
+  
+  .task-description {
+    font-size: 12px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  
+  .task-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .task-members {
+    display: flex;
+  }
+  
+  .task-member {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #3498db;
+    margin-left: -6px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: white;
+    font-weight: 500;
+  }
+  
+  .task-priority {
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+  
+  .priority-high {
+    background-color: #ffebee;
+    color: #e53935;
+  }
+  
+  .priority-medium {
+    background-color: #fff8e1;
+    color: #ffb300;
+  }
+  
+  .priority-low {
+    background-color: #e8f5e9;
+    color: #43a047;
+  }
+  
+  .add-task-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgba(52, 152, 219, 0.1);
+    border: 1px dashed #3498db;
+    border-radius: 6px;
+    color: #3498db;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .add-task-btn:hover {
+    background-color: rgba(52, 152, 219, 0.15);
+  }
+  
+  .add-column-btn {
+    width: 280px;
+    height: 100px;
+    background-color: rgba(52, 152, 219, 0.1);
+    border: 2px dashed #3498db;
+    border-radius: 8px;
+    color: #3498db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .add-column-btn:hover {
+    background-color: rgba(52, 152, 219, 0.15);
+  }

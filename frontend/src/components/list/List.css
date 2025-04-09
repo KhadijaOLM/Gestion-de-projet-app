@@ -1,0 +1,102 @@
+.list-container {
+    background-color: #ebecf0;
+    border-radius: 8px;
+    width: 280px;
+    min-height: 100px;
+    margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - 200px);
+  }
+  
+  .list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .list-header h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #172b4d;
+  }
+  
+  .list-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .edit-button, .delete-button {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 4px;
+    margin-left: 4px;
+    border-radius: 3px;
+    transition: background-color 0.2s;
+  }
+  
+  .edit-button {
+    color: #6b778c;
+  }
+  
+  .edit-button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #172b4d;
+  }
+  
+  .delete-button {
+    color: #6b778c;
+  }
+  
+  .delete-button:hover {
+    background-color: rgba(255, 0, 0, 0.08);
+    color: #ff5252;
+  }
+  
+  .list-tasks {
+    flex: 1;
+    padding: 0 12px;
+    overflow-y: auto;
+    min-height: 100px;
+  }
+  
+  .list-tasks.dragging-over {
+    background-color: rgba(0, 121, 191, 0.1);
+  }
+  
+  .list-footer {
+    padding: 8px 12px 12px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  
+  /* Custom scrollbar for the task list */
+  .list-tasks::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .list-tasks::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .list-tasks::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+  }
+  
+  .list-tasks::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  @media (max-width: 768px) {
+    .list-container {
+      width: 260px;
+      margin-right: 12px;
+    }
+  }
